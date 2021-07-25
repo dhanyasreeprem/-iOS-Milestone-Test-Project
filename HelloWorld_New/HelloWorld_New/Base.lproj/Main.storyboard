@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HelloWorld_New" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iosclass_img1" translatesAutoresizingMaskIntoConstraints="NO" id="TBg-l3-T8v">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gIB-Ka-iLL">
+                                <rect key="frame" x="130" y="413" width="154" height="70"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="50"/>
+                                <state key="normal" title="CLICK">
+                                    <color key="titleColor" systemColor="systemGrayColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T0K-NG-Nr8"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hFc-iI-pRA">
+                                <rect key="frame" x="91" y="182" width="232.5" height="71.5"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="55"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hFc-iI-pRA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9G1-Lv-YR3"/>
+                            <constraint firstItem="TBg-l3-T8v" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="CNL-CF-zfb"/>
+                            <constraint firstItem="gIB-Ka-iLL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="K6I-Vz-hBR"/>
+                            <constraint firstAttribute="bottom" secondItem="TBg-l3-T8v" secondAttribute="bottom" id="KUB-uA-vfF"/>
+                            <constraint firstItem="hFc-iI-pRA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-230.5" id="Kyf-ae-zTm"/>
+                            <constraint firstAttribute="trailing" secondItem="TBg-l3-T8v" secondAttribute="trailing" id="VYj-gj-qeU"/>
+                            <constraint firstItem="gIB-Ka-iLL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bzD-dg-p06"/>
+                            <constraint firstItem="TBg-l3-T8v" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="f1L-qb-KvC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="displayBox" destination="hFc-iI-pRA" id="hJZ-L9-T0w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="78.348214285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="iosclass_img1" width="1000" height="1500"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
